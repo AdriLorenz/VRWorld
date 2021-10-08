@@ -24,7 +24,7 @@ body {
 }
 
 .product-card {
-    max-width: 120px;
+    width: 70%;
     height: 80%;
     background-color: black;
     color: white;
@@ -35,7 +35,19 @@ body {
   }
 
   .price {
-    float: right;
+      float: right;
+  }
+
+  .buy {
+      float: right;
+      margin-top: 30px;
+      border-radius: 20px !important;
+      background-color: rgb(112, 111, 111);
+  }
+
+  .photo {
+      max-height: 150px;
+      min-height: 150px;
   }
 
   
