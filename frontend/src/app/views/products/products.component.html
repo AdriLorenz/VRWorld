@@ -1,0 +1,27 @@
+<body>
+    <br>
+    <div class="background">
+        <div class="search">
+            <form>
+                <label for="search">Buscar producto:</label><br>
+                <input class="prueba" type="text" id="search" name="search"><br>
+            </form>
+        </div>
+
+        <div class="products">
+            <mat-grid-list cols="2" rowHeight="10:15">
+                <mat-grid-tile *ngFor="let b of products">
+                    <mat-card class="product-card">
+                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                            alt="Photo of a Shiba Inu">
+                        <mat-card-title>{{b.name_product}}</mat-card-title>
+                        <mat-card-title class="price">{{b.price_product}}€</mat-card-title>
+                        <mat-card-actions>
+                            <button mat-raised-button color="primary">Comprar</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+</body>

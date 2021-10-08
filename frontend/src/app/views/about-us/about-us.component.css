@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(88, 88, 88);
+    color: rgb(247, 247, 247)
+}
+
+.background {
+    background-color: rgb(88, 88, 88);
+}
+
+.information {
+    padding-left: 50px;
+    margin-right: 20px;
+}
+
+.title {
+    line-height: 30px;
+    padding-left: 20px;
+    font-size:25px;
+    font-weight:590;
+}
+
+.title-center {
+    line-height: 30px;
+    padding-left: 20px;
+    font-size:30px;
+    font-weight:590;
+    text-align: center;
+}
+
+.separation {
+    line-height: 05px;
+}
+
+.teamwork {
+    width: 100%;
+}
+
