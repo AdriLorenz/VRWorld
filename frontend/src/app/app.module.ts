@@ -17,8 +17,11 @@ import {MatFormFieldModule, } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { SlideshowComponent } from './shared/slideshow/slideshow.component';
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+
 
 import { HttpClientModule } from '@angular/common/http';
+import { LogedUserComponent } from './views/loged-user/loged-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsComponent,
     LoginComponent,
     PageNotFoundComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    LogedUserComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [LoadScriptsService],
   bootstrap: [AppComponent]

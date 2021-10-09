@@ -1,5 +1,14 @@
 * {box-sizing:border-box}
 
+.subtitle {
+  text-align: center;
+  font-size:20px;
+  font-weight: 600;
+}
+.information {
+  text-align: center;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

@@ -11,7 +11,6 @@ import { ProductService } from 'src/app/shared/services/product.service';
 export class ProductsComponent implements OnInit {
 
   public products: Array<Product> = [];
-  // public myProduct: Product;
 
   constructor(private productService: ProductService, private router: Router, route: ActivatedRoute) {
 
