@@ -1,17 +1,19 @@
-<!-- Slideshow container -->
-<div class="slideshow-container">
+<body>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade" *ngFor="let b of employees">
-        <img src="../../../assets/images/empleados/{{b.image_employee}}.jpg" style="width:100%" alt="teamwork-image">
-        <br>
-        <p class="subtitle">{{b.name_employee}}</p>
-        <p class="information">"{{b.job_description}}"</p>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" *ngFor="let b of employees">
+            <img src="../../../assets/images/empleados/{{b.image_employee}}.jpg" style="width:100%"
+                alt="teamwork-image">
+            <br>
+            <p class="subtitle">{{b.name_employee}}</p>
+            <p class="information">"{{b.job_description}}"</p>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<p></p>
+</body>
 <br>

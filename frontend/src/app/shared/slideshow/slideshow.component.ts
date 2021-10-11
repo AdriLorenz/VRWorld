@@ -14,16 +14,17 @@ export class SlideshowComponent implements OnInit {
   public employees: Array<Employee> = [];
 
   constructor(private name: LoadScriptsService,
-    private employeeService: EmployeeService,
-    private router: Router, route: ActivatedRoute) {
+    private employeeService: EmployeeService, route: ActivatedRoute) {
 
     route.params.subscribe((x) => {
       this.loadInfo()
+      
     })
-    this.name.Load(["slider"]);
   }
 
   ngOnInit(): void {
+    this.name.Load(["slider"]);
+    
   }
 
   loadInfo() {
