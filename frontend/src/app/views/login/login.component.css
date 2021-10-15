@@ -45,3 +45,8 @@
     color:white;
     background-color: rgb(87, 86, 86);
 }
+
+.alert {
+    margin-left:50px;
+    color: red;
+}
