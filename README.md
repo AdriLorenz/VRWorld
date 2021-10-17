@@ -46,6 +46,20 @@ Install Maven dependencies in Eclipse for the backend.
 
 4. I have also included the scripts for MySQL in case you want to see it.
 
+Here you can see the MySQL connection:
+
+```
+spring.datasource.url=jdbc:mysql://localhost/db_vr?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+spring.datasource.username=root
+spring.datasource.password=adri123
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto= none
+logging.level.org.hibernate.SQL=debug
+````
+
+For the backend it use de 8080 ports, and the for the frontend it use the 4200 port
+
 
 Finally to start enjoying this project.
 
