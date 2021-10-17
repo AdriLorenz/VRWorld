@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LogedUserComponent } from './views/loged-user/loged-user.component';
+import { ProductCardComponent } from './shared/product-card/product-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { LogedUserComponent } from './views/loged-user/loged-user.component';
     LoginComponent,
     PageNotFoundComponent,
     SlideshowComponent,
-    LogedUserComponent
+    LogedUserComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

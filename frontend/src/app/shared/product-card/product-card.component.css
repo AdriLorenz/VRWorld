@@ -1,0 +1,26 @@
+.product-card {
+    width: 70%;
+    height: 80%;
+    background-color: black;
+    color: white;
+  }
+
+  mat-card-title {
+      font-size: 17px;
+  }
+
+  .price {
+      float: right;
+  }
+
+  .buy {
+      float: right;
+      margin-top: 30px;
+      border-radius: 20px !important;
+      background-color: rgb(112, 111, 111);
+  }
+
+  .photo {
+      max-height: 150px;
+      min-height: 150px;
+  }
