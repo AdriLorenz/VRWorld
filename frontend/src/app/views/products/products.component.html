@@ -4,7 +4,7 @@
         <div class="search">
             <form>
                 <label for="search">Buscar producto:</label><br>
-                <input class="info" type="search" id="search" name="search" [(ngModel)]="search"><br>
+                <input class="info" type="search" id="search" name="search" [(ngModel)]="search" (keyup.enter)="addInput()"><br>
             </form>
         </div>
         <br><br>

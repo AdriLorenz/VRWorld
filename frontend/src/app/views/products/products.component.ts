@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -8,11 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   search: string = '';
+  inputs = [1];
   
-  constructor () {
+  constructor (private router: Router) {
   }
 
   ngOnInit(): void {
+  }
+
+  addInput() {
+    this.inputs.push(1);
+    this.router.navigateByUrl(`/products/${this.search}`).then (() => {window.location.reload()});
   }
 
 }

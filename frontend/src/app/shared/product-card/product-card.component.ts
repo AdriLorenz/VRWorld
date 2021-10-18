@@ -11,16 +11,22 @@ import { ProductService } from '../services/product.service';
 export class ProductCardComponent implements OnInit {
 
   public products: Array<Product> = [];
+  public lastUrlSegment: any;
 
   constructor(private productService: ProductService, private router: Router, route: ActivatedRoute) {
+
+    this.lastUrlSegment = router.url.split('?')[0].split('/').pop()?.replace('%20', ' ').replace('%20', ' ');
+    console.log(this.lastUrlSegment)
 
     route.params.subscribe((x) => {
       this.loadInfo()
     })
 
+
    }
 
   ngOnInit(): void {
+    console.log(window.location.pathname)
   }
 
   loadInfo() {
@@ -28,5 +34,4 @@ export class ProductCardComponent implements OnInit {
       this.products = b;
     })
   }
-
 }
